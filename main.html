@@ -9,49 +9,46 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<h1>Student form</h1>
-	<form>
+	<form method="post">
 		<div>
-			<label for="name">Name* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="name">Name*</label>
 			<input type="text" id="name" required placeholder="Enter your name">
 		</div>
 		<div>
-			<label for="Email">Email*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="Email">Email*</label>
 			<input type="email" placeholder="Enter email" id="Email" required>
 		</div>
 		<div>
-			<label name="gender">Gender*: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label >Gender * </label>
 			
 			<label for="male"> male</label>
-			<input type="radio" id="male" name="gender">
+			<input type="radio" id="male" name="gender" required>
 			<label for="female"> female</label>
-			<input type="radio" id="female" name="gender">
-			<label for="others"> male</label>
-			<input type="radio" id="others" name="gender">
+			<input type="radio" id="female" name="gender" required>
+			
 		</div>
 		<div>
-			<label for="Laptops">Laptop Brands*: &nbsp</label>
-			<label for="Apple">Apple</label>
-			<input type="radio" id="Apple" class="Laptop">
-			<label for="Asus">Asus</label>
-			<input type="radio" id="Asus" class="Laptop">
-			<label for="Hp">Hp</label>
-			<input type="radio" id="Hp" class="Laptop">
+			<label for="Laptops">Laptop Brands *</label>
+			<select id="laptop" name="laptop">
+            <option value="Apple">Apple</option>
+			<option value="Asus">Asus</option>	
+			<option value="Hp">Hp</option>	
 		</div>
 		<div>
-			<label for="age">Age* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="age">Age * </label>
 			<input type="number" id="age" required>
 		</div>
 		<div>
-			<label for="Dob">DOB* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="Dob">DOB * </label>
 			<input type="date" id="Dob"  required>
 		</div>
 		<div>
-			<label for="password">Password* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="password">Password* </label>
 			<input type="password" id="password" required>
 		</div>
 		
 		<div>
-			<label for="protfolio">portfolio* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<label for="protfolio">portfolio * </label>
 			<input type="url" id="protfolio">
 		</div>
 		<div>
